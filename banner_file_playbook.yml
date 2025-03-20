@@ -1,0 +1,12 @@
+---
+- name: Configure login banner.
+  hosts: switches
+  gather_facts: false
+
+  tasks:
+
+    - name: Configure login banner from file.
+      cisco.ios.ios_banner:
+        banner: login
+        text: "{{ lookup('ansible.builtin.file', 'banner.cfg') }}"
+        state: present

@@ -1,0 +1,8 @@
+---
+- name: Configure interfaces.
+  hosts: "{{ target }}"
+  gather_facts: false
+
+
+  roles:
+    - name: interfaces

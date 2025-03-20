@@ -1,0 +1,12 @@
+---
+- name: Configure login banner.
+  hosts: switches
+  gather_facts: false
+
+  tasks:
+
+    - name: Configure login banner.
+      cisco.ios.ios_banner:
+        banner: login
+        text: Conscia Weekly Tech Friday.
+        state: present
