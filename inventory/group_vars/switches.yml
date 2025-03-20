@@ -1,0 +1,4 @@
+---
+# group variables for inventory group: switches
+ansible_user: admin
+ansible_network_os: cisco.ios.ios

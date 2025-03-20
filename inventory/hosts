@@ -1,0 +1,5 @@
+## Ansible Hosts file for ansible_demo
+
+[switches]
+automation-lab-sw01
+automation-lab-sw02

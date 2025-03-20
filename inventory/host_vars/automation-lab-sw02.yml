@@ -1,0 +1,4 @@
+---
+# host variables for automation-lab-sw02
+
+ansible_host:
