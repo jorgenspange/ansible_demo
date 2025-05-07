@@ -1,0 +1,14 @@
+---
+# vlans variables for inventory group: switches
+
+vlans:
+  - name: Middag
+    vlan_id: 10
+  - name: Pa
+    vlan_id: 20
+  - name: Grand
+    vlan_id: 30
+  - name: Blir
+    vlan_id: 40
+  - name: Digg
+    vlan_id: 50
