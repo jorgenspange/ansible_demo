@@ -1,0 +1,4 @@
+---
+# defaults file for vlans
+
+vlans_state: merged

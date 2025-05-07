@@ -1,5 +1,5 @@
 ---
-# handlers file for interfaces
+# handlers file for vlans
 
 - name: Save ios.
   cisco.ios.ios_config:

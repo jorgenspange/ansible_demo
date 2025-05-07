@@ -1,0 +1,6 @@
+{% for vlan in vlans %}
+- vlan_id: {{ vlan['vlan_id'] }}
+  name: {{ vlan['name'] }}
+  state: {{ vlan['state'] | default('active') }}
+  shutdown: {{ vlan['shutdown'] | default('disabled') }}
+{% endfor %}

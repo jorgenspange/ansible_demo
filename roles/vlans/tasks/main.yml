@@ -1,8 +1,8 @@
 ---
-# tasks file for interfaces
+# tasks file for vlans
 
-- name: Configure interfaces.
-  cisco.ios.ios_interfaces:
+- name: Configure vlans.
+  cisco.ios.ios_vlans:
     config: "{{ lookup('ansible.builtin.template', 'interface_template.j2') | ansible.builtin.from_yaml }}"
-    state: "{{ interfaces_state }}"
+    state: "{{ vlans_state }}"
   notify: Save ios.
