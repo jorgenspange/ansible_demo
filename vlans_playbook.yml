@@ -1,0 +1,19 @@
+---
+- name: Configure vlans.
+  hosts: switches
+  gather_facts: false
+
+  tasks:
+
+    - name: Configure vlans.
+      cisco.ios.vlans:
+        config:
+          - vlan_id: 1337
+            name: Conscia
+            state: active
+            shutdown: disabled
+          - vlan_id: 1338
+            name: Pulse
+            state: active
+            shutdown: disabled
+        state: replaced

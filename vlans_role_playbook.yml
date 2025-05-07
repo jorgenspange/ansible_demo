@@ -1,0 +1,10 @@
+---
+- name: Configure vlans.
+  hosts: "{{ target }}"
+  gather_facts: false
+  vars:
+    vlans_state: overridden
+
+
+  roles:
+    - name: vlans

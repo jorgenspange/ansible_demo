@@ -8,5 +8,5 @@
     - name: Configure login banner.
       cisco.ios.ios_banner:
         banner: login
-        text: Conscia Weekly Tech Friday.
+        text: Conscia Pulse.
         state: present
