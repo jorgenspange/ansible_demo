@@ -1,6 +1,6 @@
 Prerequisites:
 --------------
-  - Configure IP to hosts inventory (inventory/host_vars/..)
+  - Configure ansible_host for each host (inventory/host_vars/..), either ip or dns-name. 
 
 Ansible Variable Precedence:
 ----------------------------
